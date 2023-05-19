@@ -21,8 +21,7 @@ public class PeliculaEntity {
     private String genero;
     private String sinopsis;
 
-    public PeliculaEntity() {
-    }
+    
 
     public Long getId() {
         return id;
@@ -80,4 +79,15 @@ public class PeliculaEntity {
         this.sinopsis = sinopsis;
     }
 
+    public PeliculaEntity(Long id, String titulo, String director, Integer anio_estreno, Integer duracion,
+            String genero, String sinopsis) {
+        this.id = id;
+        this.titulo = titulo;
+        this.director = director;
+        this.anio_estreno = anio_estreno;
+        this.duracion = duracion;
+        this.genero = genero;
+        this.sinopsis = sinopsis;
+    }
+    
 }
