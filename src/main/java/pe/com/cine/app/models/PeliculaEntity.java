@@ -21,6 +21,10 @@ public class PeliculaEntity {
     private String genero;
     private String sinopsis;
 
+    // Agregando una propiedad de  Imagenen
+    private String imagen;
+
+
     
 
     public Long getId() {
@@ -80,7 +84,7 @@ public class PeliculaEntity {
     }
 
     public PeliculaEntity(Long id, String titulo, String director, Integer anio_estreno, Integer duracion,
-            String genero, String sinopsis) {
+            String genero, String sinopsis ,String imagen) {
         this.id = id;
         this.titulo = titulo;
         this.director = director;
@@ -88,6 +92,19 @@ public class PeliculaEntity {
         this.duracion = duracion;
         this.genero = genero;
         this.sinopsis = sinopsis;
+        this.imagen= imagen;
+        
+    }
+
+    public PeliculaEntity() {
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     
 }
