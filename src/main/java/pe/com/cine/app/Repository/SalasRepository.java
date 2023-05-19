@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 import pe.com.cine.app.models.SalasEntity;
 
 @Repository
+
 public interface SalasRepository extends JpaRepository<SalasEntity, Long> {
 
 }
+ñ
