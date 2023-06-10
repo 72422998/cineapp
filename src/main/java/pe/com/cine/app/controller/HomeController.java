@@ -13,6 +13,7 @@ import pe.com.cine.app.models.PeliculaEntity;
 import pe.com.cine.app.repository.PeliculaRepository;
 
 
+
 @Controller
 public class HomeController {
     @GetMapping("/")
